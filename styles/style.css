@@ -1,0 +1,113 @@
+
+html { 
+        font-family: "Red Hat Display", sans-serif;
+        text-align: justify;
+        --color-uno: #EDEDED;
+        --color-dos: #DA0037;
+        --color-tres: #444444;
+        --color-cuatro: #171717;
+    
+        background-color: var(--color-uno);
+}
+    
+body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+}
+    
+h1 {
+        font-family: "Outfit", sans-serif;
+        font-size: 35pt;
+        margin-bottom: 10px;
+}
+
+div.parrafo{
+        font-family: "Arvo", serif;
+        color: var(--color-cuatro);
+}
+
+a {
+        color: var(--color-dos);
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+}
+
+div.album-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1000px;
+}
+    
+div.album {
+        background: var(--color-uno);
+        padding: 15px;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+}
+    
+div.album:hover {
+        transform: scale(1.05);
+}
+    
+img {
+        height: 300px;
+        border-radius: 10px;
+}
+    
+div.album #parrafo {
+        font-family: "Arvo", serif;
+        color: var(--color-cuatro);
+}
+    
+
+form {
+        font-family: "Arvo", serif;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+}
+    
+form div {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+}
+    
+input, textarea {
+        font-family: "Arvo", serif;
+        border: 1px solid var(--color-tres);
+        font-size: 14px;
+}
+    
+textarea {
+        resize: none;
+        height: 100px;
+}
+    
+button {
+        background: var(--color-dos);
+        color: var(--color-uno);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+}
+    
+button:hover {
+        background: var(--color-dos);
+    }
+    
